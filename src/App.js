@@ -53,14 +53,14 @@ function App() {
 
           <Route 
             path="/restaurants/:id/review"
-            element={<AddReview />}
+            element={<AddReview user={user} />}
             //render={(props) => (
             //  <AddReview {...props} user={user} />
            // )}
           />
           <Route 
             path="/restaurants/:id"
-            element={<Restaurant />}
+            element={<Restaurant user={user} />}
             //render={(props) => (
             //  <Restaurant {...props} user={user} />
             //)}
@@ -70,7 +70,7 @@ function App() {
             //render={(props) => (
             //  <Login {...props} login={login} />
            // )}
-           element={<Login />}
+           element={<Login login={login}/>}
           />
         </Routes>
       </div>

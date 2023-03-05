@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import RestaurantDataService from "../services/restaurant"
+//React Router v6
 import { Link, useParams } from "react-router-dom";
 
 const Restaurant = (props) =>  {
