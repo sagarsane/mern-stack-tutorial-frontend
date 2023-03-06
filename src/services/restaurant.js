@@ -31,4 +31,5 @@ class RestaurantDataService {
 
 }
 
+// eslint-disable-next-line
 export default new RestaurantDataService();
