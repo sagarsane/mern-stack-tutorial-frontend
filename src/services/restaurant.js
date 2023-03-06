@@ -6,7 +6,7 @@ class RestaurantDataService {
   }
 
   get(id) {
-    return http.get(`/restaurants/id/${id}`);
+    return http.get(`restaurant?id=${id}`);
   }
 
   find(query, by = "name", page = 0) {
@@ -14,15 +14,15 @@ class RestaurantDataService {
   } 
 
   createReview(data) {
-    return http.post("restaurants/review", data);
+    return http.post("/review_new", data);
   }
 
   updateReview(data) {
-    return http.put("restaurants/review", data);
+    return http.put("/review_edit", data);
   }
 
   deleteReview(id, userId) {
-    return http.delete(`restaurants/review?id=${id}`, {data:{user_id: userId}});
+    return http.delete(`/review_delete?id=${id}`, {data:{user_id: userId}});
   }
 
   getCuisines(id) {
