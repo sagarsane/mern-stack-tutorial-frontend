@@ -1,3 +1,5 @@
+//App deployed to: https://main--loquacious-sorbet-e652a9.netlify.app/
+
 import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
